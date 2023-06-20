@@ -1,28 +1,20 @@
 # Practicum_TeleChurn_FinalProject
 2nd. repo with an examples ive found or used. ( Resources_TeleChurn_FinalProject )
 
-This repo will be for my final project from practicum, The project is for a telecom marketing team on Churn.  
-
-I have noticed that most of the really great repos tend to have section for the diffrenet tasks. This makes working more streamlinned and structured. 
-
+This repo will be for my final project from tripleten formally practicum, The project is for a telecom marketing team on Churn.  
 Layout for Repository. 
 
 Loading and Processing Data 
 
-
 Exploritry Data Analysis
 
+Features Processing
 
-Features Selection and Engineering
-
-
-Model Training and Test. 
-
+Model Training and Testing. 
 
 Model Selection. 
 
-
-Conclusions:
+Conclusions. 
 
 ::: For GitHub :::
 Learning to structure a Repositiry Correctly. 
