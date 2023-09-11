@@ -93,7 +93,7 @@ Once the base versions of these models were run, I compared their average ROC-AU
 
 
 *Fig. 3-1 - Model Boxplots*
-![Box Plots For Base Models](Charts/boxplot_Modeling_Spotcheck.png)
+![Box Plots For Base Models](Charts/boxplot_ModelingCheck.png)
 
 
 The models for hyperparameter tuning were chosen based on their average AUC-ROC values, and this selection was supported by a box plot illustrating the score distributions across 10 samples of the training set. The top three selected models for further tuning are:
