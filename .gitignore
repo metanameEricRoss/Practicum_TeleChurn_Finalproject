@@ -4,3 +4,4 @@ Data/contract_preprocessed.csv
 Data/data_preprocessed.csv
 Data/internet_preprocessed.csv
 Notebooks/.ipynb_checkpoints/EricR_Innterconnect_ChurnPrediction-checkpoint.ipynb
+*.csv
