@@ -12,7 +12,7 @@ This project identifies customer churn for Interconnect Telecommunications, addr
 
 
 ## Project Description
-Interconnect Telecom had more than 25% of their customers stop their services over a 4 month period. This project aimed to create a machine learning pipeline to identify determinants of churn and customers with a high risk of churning. In turn, helping to provide insights toward formulating effective solutions. I started by loading and processing the data, as data collection had already been handled for me. Preprocessing revealed a few simple yet important issues to fix, such as the target column and missing values for some customers. After handling errors, I moved on to feature engineering to improve the data quality before spot-checking base models and then training and testing the top 3 models. Once the most optimal model is chosen, it is then tested on unseen data to ensure the model was not overfitting. 
+Interconnect Telecom had more than 25% of their customers stop their services over a 4 month period. This project aimed to create a machine learning pipeline to identify determinants of churn and customers with a high risk of churning. In turn, helping to provide insights toward formulating effective solutions. I started by loading and processing the data, as data collection had already been handled for me. Preprocessing revealed a few simple yet important issues to fix, such as the target column and missing values for some customers. After handling errors, I moved on to feature engineering to improve the data quality before spot-checking base models and then training and testing the top 3 models. Once the optimal model is chosen, it is then tested on unseen data to ensure minimal overfitting. 
 
 ## Data Processing
 
