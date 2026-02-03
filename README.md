@@ -12,11 +12,11 @@ This project identifies customer churn for Interconnect Telecommunications, addr
 
 
 ## Project Description
-interconnect Telecom had more than 25% of their customers stopped their services over a 4 month period. The aim of this project was to create a machine learning pipeline to identify determinants of churn and customers with a high risk of churning. In turn helping to provide insights toward formulating effective solutions. I started by loading and processing the data as data collection had already been handled for me. Preprocessing revealed a few simple yet important issues to fix such as the target column and missing values for some customers. After handling errors I moved on to feature engineering to improve the data quality before spot checking base models and then training and testing the top 3 models. Once the most optimal model is chosen it was then tested on unseen data to ensure the model was not overfitting. 
+Interconnect Telecom had more than 25% of their customers stop their services over a 4 month period. This project aimed to create a machine learning pipeline to identify determinants of churn and customers with a high risk of churning. In turn, helping to provide insights toward formulating effective solutions. I started by loading and processing the data, as data collection had already been handled for me. Preprocessing revealed a few simple yet important issues to fix, such as the target column and missing values for some customers. After handling errors, I moved on to feature engineering to improve the data quality before spot-checking base models and then training and testing the top 3 models. Once the most optimal model is chosen, it is then tested on unseen data to ensure the model was not overfitting. 
 
 ## Data Processing
 
-Upon receiving and inspecting the data I discovered that there were a few issues that needed to be addressed before moving forward with the creation of features for modeling. The first issue that needed to be addressed. The first issue noticed was 11 missing values from the total charges column. After looking into the row where these values were missing I had discovered that the missing values were due to the customers being with the service less than a month. However, I elected to fill these missing values with the corresponding monthly charge which effectively handled all missing values in the data. The target column had an issue where the column called end date had values for the date the customers ended or the word “No” to signify that they had not left the service. To fix this I simply split the column into two columns. Wherein a new column called churn where the values that signified the customers end date were turned into the word “yes”, and the values of end date that were ‘no’ were replaced with the most current date in the dataframe. After, both the end date and begin date columns were converted into pandas datetime objects. 
+Upon receiving and inspecting the data, I discovered that there were a few issues that needed to be addressed before moving forward with the creation of features for modeling. The first issue that needed to be addressed. The first issue noticed was 11 missing values from the total charges column. After looking into the row where these values were missing, I discovered that the missing values were due to the customers being with the service for less than a month. However, I elected to fill these missing values with the corresponding monthly charge, which effectively handled all missing values in the data. The target column had an issue where the column called end date had values for the date the customers ended or the word “No” to signify that they had not left the service. To fix this, I simply split the column into two columns. Wherein a new column called churn, where the values that signified the customer's end date were turned into the word “yes”, and the values of end date that were ‘no’ were replaced with the most current date in the dataframe. After, both the end date and begin date columns were converted into pandas datetime objects. 
 
 ## Exploratory Data Analysis
 
@@ -27,7 +27,7 @@ Upon receiving and inspecting the data I discovered that there were a few issues
 
 ![Churned Share](Charts/pie_Churn.png)
 
-From the data we can see that over the span of 4 months ~ 26.5% of customers have churned. 
+From the data, we can see that over the span of 4 months, ~ 26.5% of customers have churned. 
 
  ### Payment Method
 
@@ -36,14 +36,14 @@ From the data we can see that over the span of 4 months ~ 26.5% of customers hav
 ![Churn Payment Method](Charts/pie_Paymentmethod.png)
 
 
-From the two graphs above we can see that the electronic checking method of payment is the most popular of the four options. The issue being that electronic checking has nearly 45.3% of these users churned which is more than double the next highest churn rating below that. 
+From the two graphs above, we can see that the electronic checking method of payment is the most popular of the four options. The issue being that electronic checking has nearly 45.3% of these users churned which is more than double the next highest churn rate below that. 
 ### Payment Type 
 
  *Fig. 1-3 - payment type* 
 ![Churn Payment Type](Charts/pie_Type.png)
 
 
-I originally had the idea that it may be beneficial to compare the month-to-month customers as their own group separate from the year and two year contract. After looking at the graph it is safe to assume this would be a potential option for further improvement to the model if the need were to arise. 
+I originally had the idea that it may be beneficial to compare the month-to-month customers as their own group, separate from the year and two-year contracts. After looking at the graph, it is safe to assume this would be a potential option for further improvement to the model if the need were to arise. 
 
 
 ### Partners 
@@ -78,7 +78,7 @@ When we compare the monthly costs of the two groups of customers, we can see a c
 ![Churn Tenure Distribution](Charts/hist_Tenure.png)
 
 
- Upon analyzing the distributions of tenure.  We can confirm a common correlation between loyalty and length of service. In the data we see that nearly forty percent of the customers that will churn do so within six months. 
+ Upon analyzing the distributions of tenure.  We can confirm a common correlation between loyalty and length of service. In the data, we see that nearly forty percent of the customers who will churn do so within six months. 
 
 ## Feature engineering
 
@@ -105,7 +105,7 @@ The models for hyperparameter tuning were chosen based on their average AUC-ROC 
 
 ## Model Testing
 
-As we can see from the results below the gradient boosting model performed the best out of the 3 models. However, I would consider further testing to determine the results of this data. 
+As we can see from the results below, the gradient boosting model performed the best out of the 3 models. However, I would consider further testing to determine the results of this data. 
 
 ![Confusion Matrix For Final Models](Charts/final_ConfusionMatrix.png) 
 
