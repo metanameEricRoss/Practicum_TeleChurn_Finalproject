@@ -36,7 +36,7 @@ From the data, we can see that over the span of 4 months, ~ 26.5% of customers h
 ![Churn Payment Method](Charts/pie_Paymentmethod.png)
 
 
-From the two graphs above, we can see that the electronic checking method of payment is the most popular of the four options. The issue being that electronic checking has nearly 45.3% of these users churned which is more than double the next highest churn rate below that. 
+From the two graphs above, we can see that the electronic checking method of payment is the most popular of the four options. The issue is that electronic checking has nearly 45.3% of these users churned which is more than double the next highest churn rate below that. 
 ### Payment Type 
 
  *Fig. 1-3 - payment type* 
